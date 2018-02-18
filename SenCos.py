@@ -1,19 +1,17 @@
-# Import the modules with the math functions and the plotting options
-# We need
+# Import the modules with math functions and plotting options
 import numpy as np
 from matplotlib import pyplot as plt
 import sys
 
-# Two ways to plot the tangent
-x = np.arange(0.0, 2, 0.1)
-#y = (np.sin(2*np.pi*x)) / (np.cos(2*np.pi*x))
-y1 = np.tan(2*np.pi*x)
+# Define functions
+x = np.arange(0.0, 2, 0.01)
+y = np.cos(2*np.pi*x)
+y1 = np.sin(2*np.pi*x)
 
-# Set the range of the axes
-plt.axis([-2*np.pi, 2*np.pi, -2, 2])
-# Include a title
-plt.title('y = tan(x)')
-
-#plt.plot(x,y)
-plt.plot(x,y1)
+# Plot
+plt.plot(x, y, label='Coseno')
+plt.plot(x,y1, label='Seno')
+plt.plot
+plt.xlabel('X')
+plt.ylabel('Y')
 plt.show()
