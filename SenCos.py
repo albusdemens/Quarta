@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 import sys
 
 # Define functions
-x = np.arange(0.0, 2, 0.01)
+x = np.arange(0.0, 2, 0.1)
 y = np.cos(2*np.pi*x)
 y1 = np.sin(2*np.pi*x)
 
